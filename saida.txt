@@ -1,0 +1,29 @@
+=== Cadastro de produtos ===
+Produtos cadastrados com sucesso.
+
+=== Tentativa de cadastro inválido ===
+QuantidadeInvalidaException capturada: Quantidade inválida para "Feijão 1kg": -5
+
+=== Produtos em estoque ===
+[0] Arroz 5kg            | Preço: R$    25.90 | Quantidade:   10 | Total: R$ 259.00
+[1] Detergente           | Preço: R$     2.50 | Quantidade:   40 | Total: R$ 100.00
+[2] Leite 1L             | Preço: R$     5.00 | Quantidade:   20 | Vence em: 10 dia(s) | Total: R$ 100.00
+[3] Iogurte              | Preço: R$     4.00 | Quantidade:   15 | Vence em: 2 dia(s) (20% de desconto) | Total: R$ 48.00
+
+=== Sobrecarga de aplicarDesconto ===
+Arroz com 10% de desconto: R$ 23.31
+Leite com 50% de desconto (máximo R$ 1,00): R$ 4.00
+
+=== Vendas ===
+Produto "Sabonete" cadastrado.
+Venda realizada: 15 unidade(s) de Detergente. Restam 25.
+ProdutoIndisponivelException capturada: Estoque insuficiente de "Iogurte": solicitado 100, disponível 15.
+
+=== Estoque final ===
+[0] Arroz 5kg            | Preço: R$    23.31 | Quantidade:   10 | Total: R$ 233.10
+[1] Detergente           | Preço: R$     2.50 | Quantidade:   25 | Total: R$ 62.50
+[2] Leite 1L             | Preço: R$     4.00 | Quantidade:   20 | Vence em: 10 dia(s) | Total: R$ 80.00
+[3] Iogurte              | Preço: R$     4.00 | Quantidade:   15 | Vence em: 2 dia(s) (20% de desconto) | Total: R$ 48.00
+[4] Sabonete             | Preço: R$     3.20 | Quantidade:   30 | Total: R$ 96.00
+
+Valor total do estoque: R$ 519.60
